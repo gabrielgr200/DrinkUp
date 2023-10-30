@@ -1,4 +1,4 @@
-fetch('http://52.72.243.224:7000/registros/register')
+fetch('https://api-agua.onrender.com/registros/register')
   .then(response => response.json())
   .then(data => {
     const idInput = document.getElementById('id');

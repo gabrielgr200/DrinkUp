@@ -12,7 +12,7 @@ const registrationForm = document.getElementById("registration-form");
                 password
             };
 
-            fetch("http://52.72.243.224:7000/registros/register", {
+            fetch("https://api-agua.onrender.com/registros/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

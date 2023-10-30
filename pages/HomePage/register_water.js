@@ -11,7 +11,7 @@ document.getElementById("register-button").addEventListener("click", function ()
         register_id: id,
     };
 
-    fetch("http://52.72.243.224:7000/registros/register_water", {
+    fetch("https://api-agua.onrender.com/registros/register_water", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
