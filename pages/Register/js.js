@@ -12,7 +12,7 @@ const registrationForm = document.getElementById("registration-form");
                 password
             };
 
-            fetch("https://2600:1f18:3403:a600:7ff4:43c9:8882:9697:7000/registros/register", {
+            fetch("http://52.72.243.224:7000/registros/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
