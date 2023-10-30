@@ -28,6 +28,7 @@ const registrationForm = document.getElementById("registration-form");
             .then((data) => {
                 console.log("Registro bem-sucedido:", data);
 
+                successMessage.style.display = "block";
             })
             .catch((error) => {
                 console.error("Erro ao registrar:", error);
