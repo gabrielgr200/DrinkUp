@@ -32,7 +32,7 @@ const registrationForm = document.getElementById("registration-form");
 
                 setTimeout(() => {
     
-                    window.location.href = "http://127.0.0.1:5500/pages/HomePage/index.html"; 
+                    window.location.href = "https://drinkup-three.vercel.app/pages/HomePage/index.html"; 
                 }, 2000); 
             })
             .catch((error) => {
