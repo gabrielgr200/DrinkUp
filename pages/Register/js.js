@@ -28,12 +28,6 @@ const registrationForm = document.getElementById("registration-form");
             .then((data) => {
                 console.log("Registro bem-sucedido:", data);
 
-                successMessage.style.display = "block";
-
-                setTimeout(() => {
-    
-                    window.location.href = "https://drinkup-three.vercel.app/pages/HomePage/index.html"; 
-                }, 2000); 
             })
             .catch((error) => {
                 console.error("Erro ao registrar:", error);
