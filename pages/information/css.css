@@ -110,3 +110,108 @@ label {
     font-size: 20px;
     font-weight: bold;
 }
+
+@media (max-width: 1920px){
+    .container {
+        width: 100%;
+        max-width: 1110px;
+        margin: auto;
+    }
+    
+    header {
+        display: flex;
+        height: 42px;
+        margin-top: 30px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    ul {
+        left: 200px;
+        position: relative;
+    }
+    
+    li {
+        padding-right: 25px;
+        display: inline-block;
+    }
+    
+    .tag {
+        text-decoration: none;
+        color: #1e255e;
+        transition: all 0.25s ease;
+    }
+    
+    .tag:hover {
+        color: #17a4d0;
+    }
+    
+    .logo {
+        width: 18%;
+    }
+    
+    .button {
+        text-align: center;
+        width: 130px;
+        height: 42px;
+        border: 1px solid #17a4d0;
+        font-size: 16px;
+        font-weight: 600;
+        color: #17a4d0;
+        background-color: transparent;
+        border-radius: 10px;
+        font-family: 'Raleway', sans-serif;
+        transition: all 0.25s ease-out;
+    }
+    
+    .button:hover {
+        background-color: #17a4d0;
+        color: #fff;
+    }
+    
+    .link {
+        text-decoration: none;
+        transition: all 0.25s ease-out;
+    }
+    
+    .input-container {
+        margin-bottom: 15px;
+    }
+    
+    input[type="text"] {
+        width: 100%;
+        max-width: 600px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 50px;
+        font-size: 16px;
+        position: relative;
+        top: 20px;
+    }
+    
+    label {
+        top: 20px;
+        position: relative;
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    
+    .text-container {
+        padding: 20px;
+        height: 300px;
+        border-radius: 30px;
+        max-width: 800px;
+        background: #17a4d0;
+        text-align: center;
+        position: relative;
+        top: 150px;
+        left: 240px;
+    }
+    
+    .text {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}

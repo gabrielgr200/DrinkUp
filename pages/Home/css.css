@@ -72,3 +72,74 @@ h3{
     position: absolute;
     text-transform: uppercase;
 }
+@media (max-width: 1920px) {
+    body {
+        background: url(../../img/background-2.png), url(../../img/background-1.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    a {
+        text-decoration: none; 
+    }
+    button {
+        font-size: 20px;
+        font-weight: 600;
+        width: 200px;
+        height: 60px;
+        margin-top: 50px;
+        left: 280px;
+        position: relative;
+        background-color: #17a4d0;
+        color: white;
+        padding: 10px 20px; 
+        border: 1px solid #17a4d0; 
+        border-radius: 50px; 
+        cursor: pointer;
+        transition: all 0.25s ease-out; 
+    }
+    button:hover{
+        background-color: #fff;
+        color: #17a4d0;
+    }
+    .container {
+        right: 50px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .container > div {
+        width: 50%;
+    }
+    .container h1{
+        text-align: center;
+        padding-left: 100px;
+        color: #1e255e;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .container h4{
+        font-weight: 600;
+        font-size: 18px;
+        padding-top: 30px;
+        padding-left: 160px;
+        color: grey;
+    }
+    img{
+        bottom: 300px;
+        left: 800px;
+        position: absolute;
+        width: 400px;
+    }
+    h3{
+        font-size: 18px;
+        top: 360px;
+        right: 180px;
+        position: absolute;
+        text-transform: uppercase;
+    }
+}
