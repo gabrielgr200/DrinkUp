@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Raleway:ital@1&family=Roboto+Condensed&display=swap');
+
+.contai {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contai .card {
+    width: 350px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    background-image: linear-gradient(rgba(34, 160, 182, 0.5), transparent);
+    border-radius: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    transition: .5s ease-out;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, .10);
+}
+
+.contai .card:hover {
+    height: 400px;
+}
+
+.contai .card .content {
+    top: 30px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+}
+
+.contai .card:hover .content {
+    top: 120px;
+    height: 250px;
+}
+
+.contai .card .content h2 {
+    font-weight: 700;
+    font-size: 1.7rem;
+    padding-bottom: 10px;
+    font-family: Crimson Text;
+}
+
+.contai .card .content p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-family: 'Raleway', sans-serif;
+}

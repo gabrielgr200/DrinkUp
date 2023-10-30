@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/Up.gif" type="image/x-icon">
+    <link rel="stylesheet" href="/pages/Table/css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <title>Tabela</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="/img/transparente.png" class="logo" alt="logo da DrinkUp">
+            <div>
+                <ul>
+                    <a href="/pages/HomePage/index.html" class="tag">
+                        <li>Home</li>
+                    </a>
+                    <a href="/pages/Table/index.html" class="tag">
+                        <li>Tabela</li>
+                    </a>
+                    <a href="/pages/information/index.html" class="tag">
+                        <li>Informações</li>
+                    </a>
+                    <a href="/pages/Support/index.html" class="tag">
+                        <li>Suporte</li>
+                    </a>
+                </ul>
+            </div>
+            <a href="/pages/Register/index.html" class="link">
+                <button class="button">Cadastrar</button>
+            </a>
+        </header>
+    </div>
+
+    <div class="container-search">
+        <div class="search">
+            <div class="name">
+                <input type="search" name="search" id="search" placeholder="Digite o nome de usuário">
+                <button class="botao" onclick="searchUser()">Procurar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-container">
+        <span class="text">Registros da semana:</span>
+        <table align="center" id="userTable" class="table">
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Quantidade(ml)</th>
+                <th>Data</th>
+                <th>ID de registro</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/pages/Table/js.js"></script>
+</body>
+
+</html>

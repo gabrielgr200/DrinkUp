@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/HomePage/css.css">
+    <link rel="stylesheet" href="/pages/HomePage/styles.css">
+    <link rel="shortcut icon" href="/img/Up.gif" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <title>DrinkUp</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="/img/transparente.png" class="logo" alt="logo da DrinkUp">
+            <div>
+                <ul>
+                    <a href="/pages/HomePage/index.html" class="tag">
+                        <li>Home</li>
+                    </a>
+                    <a href="/pages/Table/index.html" class="tag">
+                        <li>Tabela</li>
+                    </a>
+                    <a href="/pages/information/index.html" class="tag">
+                        <li>Informações</li>
+                    </a>
+                    <a href="/pages/Support/index.html" class="tag">
+                        <li>Suporte</li>
+                    </a>
+                </ul>
+            </div>
+            <a href="/pages/Register/index.html" class="link">
+                <button class="button">Cadastrar</button>
+            </a>
+        </header>
+    </div>
+    <div class="information-container">
+        <div class="circular">
+            <div class="inner"></div>
+            <div class="number">0ml</div>
+            <div class="circle">
+                <div class="bar left">
+                    <div class="progress"></div>
+                </div>
+                <div class="bar right">
+                    <div class="progress"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-container">
+        <span class="text">Faça o seu registro aqui para ter controle da sua hidratação:</span>
+        <div class="input-container">
+            <div class="input-group">
+                <label for="name">O seu nome de Usuário:</label>
+                <input type="text" id="name" name="name" placeholder="Nome de Usuário">
+            </div>
+            <div class="input-group">
+                <label for="amount">Quantidade de água ingerida:</label>
+                <input type="number" id="amount" name="amount" placeholder="Sua quantidade em (ml)">
+            </div>
+            <div class="input-group">
+                <label for="date">Data do registro:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="input-group">
+                <label for="id">O seu ID de registro:</label>
+                <input type="number" id="id" name="id" placeholder="Número do ID">
+            </div>
+            <button id="register-button" class="custom-button">Registra-se</button>
+        </div>
+    </div>
+
+    <div class="margin"></div>
+    <div class="contai">
+        <div class="line">
+            <div class="card">
+                <div class="content">
+                    <h2>Importância da água 🚰</h2>
+                    <p>
+                        A água é essencial para a vida, sustentando ecossistemas, garantindo nossa saúde e
+                        possibilitando o desenvolvimento humano, tornando-a um recurso precioso e indispensável.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <h2>A chave para a saúde 🔑</h2>
+                    <p>
+                        A água é essencial para o funcionamento do corpo humano, sendo responsável por uma série de
+                        processos vitais, como a regulação da temperatura corporal, o transporte de nutrientes e a
+                        eliminação de resíduos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <h2>Riscos da desidratação 🤒</h2>
+                    <p>
+                        A desidratação pode causar uma série de problemas de saúde, incluindo fadiga, dor de cabeça,
+                        constipação e problemas de pele.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social_icon">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+            <div class="menu">
+                <li><a href="/pages/HomePage/index.html">Home</a></li>
+                <li><a href="/pages/Table/index.html">Tabela</a></li>
+                <li><a href="/pages/information/index.html">Informações</a></li>
+                <li><a href="/pages/Support/index.html">Suporte</a></li>
+            </div>
+            <p>&copy; 2023 DrinkUp | All Rights Reversed</p>
+        </footer>
+    </div>
+
+    <script src="/pages/HomePage/register_water.js"></script>
+    <script src="/pages/HomePage/js.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
