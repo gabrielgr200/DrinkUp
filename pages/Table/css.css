@@ -222,7 +222,7 @@ tr:hover {
     }
     
     .container-search {
-        top: 100px;
+        top: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -271,7 +271,7 @@ tr:hover {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 60vh;
+        height: 100vh;
     }
     
     .text-container .text {

@@ -1,3 +1,27 @@
+const numb = document.querySelector(".number");
+let counter = 0;
+let targetAmount = 0;
+
+function updateCounter() {
+    if (counter <= targetAmount) {
+        numb.textContent = counter + "ml";
+        counter += 1;
+
+        const percentage = (counter / targetAmount) * 100;
+
+        if (percentage <= 50) {
+            document.querySelector(".circle .left .progress").style.transform = `rotate(${percentage * 1.8}deg)`;
+        } else {
+            document.querySelector(".circle .left .progress").style.transform = "rotate(90deg)";
+            document.querySelector(".circle .right .progress").style.transform = `rotate(${(percentage - 50) * 1.8}deg)`;
+        }
+    } else {
+        clearInterval(counterInterval);
+    }
+}
+
+let counterInterval = null;
+
 document.getElementById("register-button").addEventListener("click", function () {
     const name = document.getElementById("name").value;
     const amount = document.getElementById("amount").value;
@@ -7,7 +31,7 @@ document.getElementById("register-button").addEventListener("click", function ()
     const requestData = {
         name,
         quantidade_ml: amount,
-        data: inputDate, 
+        data: inputDate,
         register_id: id,
     };
 
@@ -26,6 +50,9 @@ document.getElementById("register-button").addEventListener("click", function ()
     })
     .then((data) => {
         console.log("Registro de água bem-sucedido:", data);
+        targetAmount = parseInt(amount);
+        counter = 0;
+        counterInterval = setInterval(updateCounter, 70);
         alert("Registro de água bem-sucedido!");
     })
     .catch((error) => {
