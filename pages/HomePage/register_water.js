@@ -53,7 +53,7 @@ document.getElementById("register-button").addEventListener("click", function ()
         targetAmount = parseInt(amount);
         counter = 0;
         counterInterval = setInterval(updateCounter, 70);
-        alert("Registro de água bem-sucedido!");
+        alert("Registro de água bem-sucedido! Acesse a página tabela para ver o seu registro");
     })
     .catch((error) => {
         console.error("Erro ao registrar água:", error);
